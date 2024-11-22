@@ -1,0 +1,25 @@
+﻿
+
+
+
+<h1 > Book an Appoitment</h1>
+<div class="row">
+  @{
+    foreach(var item in Model)
+    {
+        <div class="col-4">
+                <div class="card" style="">
+                    <img src="~/Images/@item.Img" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> Dr :  @item.FullName</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="https://localhost:7206/First/Doctor/@item.Id" class="btn btn-primary">Go Details</a>
+                    </div>
+                </div>
+
+
+        </div>
+        
+    }
+  }
+</div>
